@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", system-ui, sans-serif;
+  background: #e8eaed;
+}
+
+.box-custom {
+  width: 400px;
+  min-height: 280px;
+  padding: 20px 22px;
+  background: #f7f8fa;
+  border: 1px solid #d8dce3;
+  box-sizing: border-box;
+  color: #1f2937;
+}
+
+.header {
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #d8dce3;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.form-section {
+  margin-bottom: 16px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.input-label i {
+  margin-right: 6px;
+  color: #6b7280;
+  width: 1em;
+}
+
+.field-row {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.field-input {
+  flex: 1;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #c5cad3;
+  border-radius: 2px 0 0 2px;
+  border-right: none;
+  color: #1f2937;
+  font-family: "Lexend", system-ui, sans-serif;
+  font-size: 0.8125rem;
+  padding: 10px 12px;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: #6b7280;
+  box-shadow: 0 0 0 1px #9ca3af;
+}
+
+.field-input::placeholder {
+  color: #9ca3af;
+}
+
+.field-append {
+  flex-shrink: 0;
+}
+
+.field-row.is-disabled .field-input {
+  background: #f3f4f6;
+  color: #6b7280;
+  border-color: #d1d5db;
+}
+
+.copy-btn {
+  background: #374151;
+  border: 1px solid #374151;
+  color: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 0 2px 2px 0;
+  height: 38px;
+  box-sizing: border-box;
+  min-width: 76px;
+  font-family: "Lexend", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #1f2937;
+  border-color: #1f2937;
+}
+
+.copy-btn i {
+  margin-right: 6px;
+}
+
+.copy-btn.copied {
+  background: #4b5563;
+  border-color: #4b5563;
+}
+
+.copy-btn.copied:hover {
+  background: #374151;
+}
+
+.action-section {
+  margin-bottom: 16px;
+}
+
+.refresh-btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #9ca3af;
+  color: #374151;
+  padding: 10px 16px;
+  border-radius: 2px;
+  font-family: "Lexend", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+  background: #f3f4f6;
+  border-color: #6b7280;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.status-section {
+  text-align: left;
+}
+
+#status-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 2px;
+  font-size: 0.8125rem;
+  border: 1px solid #d8dce3;
+  background: #ffffff;
+  color: #6b7280;
+}
+
+#status-message > i {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #6b7280;
+}
+
+#status-message-body {
+  flex: 1;
+  min-width: 0;
+}
+
+#status-message .status-link {
+  color: #1f2937;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#status-message .status-link:hover {
+  color: #111827;
+}
+
+#status-message.status-message--success .status-link,
+#status-message.status-message--error .status-link {
+  color: inherit;
+}
+
+#status-message.status-message--success {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+  color: #374151;
+}
+
+#status-message.status-message--success > i {
+  color: #4b5563;
+}
+
+#status-message.status-message--error {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #4b5563;
+}
+
+#status-message.status-message--error > i {
+  color: #6b7280;
+}
+
+.loading-data {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(247, 248, 250, 0.92);
+  display: none;
+  z-index: 9999;
+}
+
+.loading-data.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-content {
+  text-align: center;
+  color: #374151;
+  font-family: "Lexend", system-ui, sans-serif;
+}
+
+.loading-content .icon-loading {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.loading-content p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  color: #4b5563;
+}
+
+@media (max-width: 450px) {
+  .box-custom {
+    width: 350px;
+    padding: 16px;
+  }
+
+  .copy-btn {
+    min-width: 64px;
+    padding: 10px 10px;
+  }
+
+  .copy-btn .btn-text {
+    display: none;
+  }
+}
+
+.copy-success {
+  opacity: 0.92;
+}
+
+.copy-btn:focus,
+.refresh-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e5e7eb;
+}

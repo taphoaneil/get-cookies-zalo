@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Get Cookies &amp; IMEI Zalo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="custom" class="box-custom">
+    <div class="header">
+      <h2>Get Cookies &amp; IMEI Zalo</h2>
+    </div>
+
+    <div class="form-section">
+      <div class="input-group">
+        <label class="input-label" for="imei-input">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          IMEI
+        </label>
+        <div id="imei-div" class="field-row is-disabled">
+          <input id="imei-input" type="text" disabled autocomplete="off" class="field-input" placeholder="Chưa có IMEI...">
+          <div class="field-append">
+            <button id="btn-copy-1" type="button" class="copy-btn" title="Copy IMEI">
+              <i class="fa-solid fa-copy" aria-hidden="true"></i>
+              <span class="btn-text">Copy</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label class="input-label" for="cookies-input">
+          <i class="fa-solid fa-cookie-bite" aria-hidden="true"></i>
+          Cookies
+        </label>
+        <div id="cookies-div" class="field-row is-disabled">
+          <input id="cookies-input" type="text" disabled autocomplete="off" class="field-input" placeholder="Chưa có cookies...">
+          <div class="field-append">
+            <button id="btn-copy-2" type="button" class="copy-btn" title="Copy Cookies">
+              <i class="fa-solid fa-copy" aria-hidden="true"></i>
+              <span class="btn-text">Copy</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-section">
+      <button type="button" id="refresh-button" class="refresh-btn">
+        <i class="fa-solid fa-rotate" aria-hidden="true"></i>
+        Làm mới dữ liệu
+      </button>
+    </div>
+
+    <div class="status-section" id="status-section-wrap">
+      <div id="status-message">
+        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <span id="status-message-body">Mở <a class="status-link" href="https://chat.zalo.me" target="_blank" rel="noopener noreferrer">chat.zalo.me</a> để thu thập tự động</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading_data" class="loading-data">
+    <div class="loading-content">
+      <i class="icon-loading fa-solid fa-spinner fa-spin fa-2x fa-fw" aria-hidden="true"></i>
+      <p>Đang xử lý...</p>
+    </div>
+  </div>
+
+  <script src="./custom.js"></script>
+</body>
+
+</html>
