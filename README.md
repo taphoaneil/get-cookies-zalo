@@ -18,7 +18,7 @@ Mục đích sử dụng cá nhân của tôi là lấy thông tin đăng nhập
 1. Tải hoặc clone mã nguồn này về máy.
 
    ```bash
-   git clone <link-repository-cua-ban>
+   git clone https://github.com/taphoaneil/get-cookies-zalo.git
    ```
 
 2. Mở Chrome và truy cập:
